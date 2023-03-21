@@ -57,7 +57,7 @@ class MedicineListContainer extends StatelessWidget {
                         color: customColor3,
                       ),
                       SizedBox(
-                        width: size.width * 0.1,
+                        width: size.width * 0.09,
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 12),
@@ -71,10 +71,16 @@ class MedicineListContainer extends StatelessWidget {
                               const SizedBox(
                                 height: 18,
                               ),
-                              Text(
-                                'الجرعه التاليه : $nextDose ',
-                                style:
-                                    TextStyle(fontSize: 18, color: customColor),
+                              Row(
+                                children: [
+                                  Text(
+                                    'الجرعه التاليه : $nextDose ',
+                                    style:
+                                        TextStyle(fontSize: 18, color: customColor),
+                                  ),
+                                  const SizedBox(width: 5,),
+                                  const Icon(Icons.alarm)
+                                ],
                               ),
                             ],
                           ),
